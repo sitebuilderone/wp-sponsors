@@ -1,0 +1,13 @@
+.wp-sponsors { display: grid; grid-template-columns: repeat(var(--wp-sponsors-columns, 3), minmax(0, 1fr)); gap: 1.5rem; }
+.wp-sponsors--columns-1 { --wp-sponsors-columns: 1; }
+.wp-sponsors--columns-2 { --wp-sponsors-columns: 2; }
+.wp-sponsors--columns-3 { --wp-sponsors-columns: 3; }
+.wp-sponsors--columns-4 { --wp-sponsors-columns: 4; }
+.wp-sponsors--columns-5 { --wp-sponsors-columns: 5; }
+.wp-sponsors--columns-6 { --wp-sponsors-columns: 6; }
+.wp-sponsors__sponsor { min-width: 0; text-align: center; overflow-wrap: anywhere; }
+.wp-sponsors__link { display: block; }
+.wp-sponsors .wp-sponsors__logo { display: block; width: auto; max-width: 100%; height: auto; max-height: 160px; margin: 0 auto 0.75rem; object-fit: contain; }
+.wp-sponsors__name { display: block; font-weight: 600; }
+.wp-sponsors__description { margin: 0.75rem 0 0; }
+@media (max-width: 600px) { .wp-sponsors { grid-template-columns: 1fr; } }
